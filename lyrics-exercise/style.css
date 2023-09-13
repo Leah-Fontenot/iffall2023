@@ -4,6 +4,7 @@
     height: 500px;
     margin-left: 20%;
     margin-right: 20%;
+    margin-bottom: 5%;
     justify-content: space-evenly;
     justify-items: auto;
 }
@@ -13,14 +14,14 @@ h1{
     font-family: Georgia;
     font-weight: 900;
     font-size: 40pt;
-    text-shadow: 4px 4px 2px rgb(8, 79, 134);
+    text-shadow: 4px 4px 4px rgb(90,100,140);
 }
 h2{
     text-align: center;
     font-family: Georgia;
     font-weight: bold;
     font-size: 30pt;
-    color: rgb(8, 79, 134);
+    color: rgb(90,100,140);
     text-shadow: 2px 2px 2px rgb(255, 255, 255);
     margin-bottom: 0%;
 }
@@ -29,7 +30,7 @@ h3{
     font-family: Georgia;
     font-weight: bold;
     font-size: 20pt;
-    color: rgb(8, 79, 134);
+    color: rgb(90,100,140);
     text-shadow: 2px 2px 2px rgb(255, 255, 255);
 }
 h4{
@@ -38,10 +39,12 @@ h4{
     font-weight: bold;
     font-size: 10pt;
     color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 2px rgb(8, 79, 134);
+    text-shadow: 0px 0px 2px rgb(90,100,140);
 }
 body{
-    background-color: rgb(251, 167, 167);
+    background-color: rgb(214,219,187);
+ /*   background-size: 50% 100%;
+    background-position: 25% 25%; */
     font-family: Georgia;
     font-weight: 500;
     font-size: 15pt;
@@ -56,63 +59,70 @@ body{
 .verse1{
     align-items: center;
     align-content: center;
-    color: white;
+    color: rgb(90,100,140);
     justify-content: space-evenly;
     margin: auto;
     width: 40%;
     padding: 25px;
+    text-shadow: 1px 1px 4px rgb(255, 255, 255);
 }
 .verse2{
     align-items: center;
     align-content: center;
-    color: white;
+    color: rgb(90,100,140);
     justify-content: space-evenly;
     margin: auto;
     width: 40%;
     padding: 25px;
+    text-shadow: 1px 1px 4px rgb(255, 255, 255);
 }
 .verse3{
     align-items: center;
     align-content: center;
-    color: white;
+    color: rgb(90,100,140);
     justify-content: space-evenly;
     margin: auto;
     width: 40%;
     padding: 25px;
+    text-shadow: 1px 1px 4px rgb(255, 255, 255);
 }
 .verse4{
     align-items: center;
     align-content: center;
-    color: white;
+    color: rgb(90,100,140);
     justify-content: space-evenly;
     margin: auto;
     width: 40%;
     padding: 25px;
+    text-shadow: 1px 1px 4px rgb(255, 255, 255);
 }
 .verse5{
     align-items: center;
     align-content: center;
-    color: white;
+    color: rgb(90,100,140);
     justify-content: space-evenly;
     margin: auto;
     width: 40%;
     padding: 25px;
+    text-shadow: 1px 1px 4px rgb(255, 255, 255);
 }
 .verse6{
     align-items: center;
     align-content: center;
-    color: white;
+    color: rgb(90,100,140);
     justify-content: space-evenly;
     margin: auto;
     width: 40%;
     padding: 25px;
+    text-shadow: 1px 1px 4px rgb(255, 255, 255);
 }
 .verse7{
     align-items: center;
     align-content: center;
-    color: white;
+    color: rgb(90,100,140);
     justify-content: space-evenly;
     margin: auto;
     width: 40%;
     padding: 25px;
+    text-shadow: 1px 1px 4px rgb(255, 255, 255);
 }
