@@ -1,0 +1,64 @@
+html {
+    font-size: 24px;
+    line-height: 1.2em;
+}
+body {
+    font-family: 'Arial', sans-serif;
+}
+article {
+    background-color: rgb(190, 215, 245);
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgb(37, 62, 108);
+    padding: 60px 20%;
+    /* margin: 10%; */
+}
+section {
+    margin: 8% 20%;
+}
+h1 {
+    font-size: 1.75rem;
+    margin-bottom: .6em;
+    margin-block-start: 0em;
+}
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: .6em;
+    color: rgb(190, 215, 245);
+    text-shadow: 0 0 1px rgb(37, 62, 108);
+}
+h3 {
+    font-size: .6rem;
+    margin-top: .4em;
+    margin-bottom: .4em;
+    color: rgb(190, 215, 245);
+    font-weight: 400;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+section.font-style p.normal {
+    font-style: normal;
+}
+p.LSpacing1{
+    letter-spacing: .5em;
+}
+p.LSpacing2{
+    letter-spacing: -.08em;
+}
+p.linethrough{
+    text-decoration: line-through;
+}
+p.overline{
+    text-decoration: overline;
+}
+p.uppercase {
+    text-transform: uppercase;
+}
+p.lowercase {
+    text-transform: lowercase;
+}
+p.capitalize {
+    text-transform: capitalize;
+}
