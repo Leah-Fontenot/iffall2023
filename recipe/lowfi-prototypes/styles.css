@@ -1,0 +1,47 @@
+html {
+    font-size: 20px;
+} 
+body {
+    margin: 0%;
+    background-color: rgba(247, 228, 217);
+}
+.row {
+    display:flex;
+    
+    height: 25%;
+    border-bottom: 5px solid rgba(106, 75, 118, 0.7);
+    align-items: center;
+}
+.row h2 {
+    width: 30%;
+    padding: 5%;
+}
+img {
+    display: block;
+    /* padding: 2%; */
+    width: 50%;
+    border: 5px solid rgba(106, 75, 118, 0.7);
+    border-radius: 50px;
+}
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    /* margin-bottom: .6em; */
+    color: rgba(106, 75, 118, 0.7);
+    text-shadow: 0 0 2px rgb(248, 233, 255);
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    /* margin-bottom: .6em; */
+    color: rgba(106, 75, 118, 0.7);
+    text-shadow: 0 0 2px rgb(248, 233, 255);
+    text-transform: uppercase;
+}
+#bottom {
+    border-bottom: none;
+}
+div {
+    padding: 2%;
+}
