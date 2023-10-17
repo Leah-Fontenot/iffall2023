@@ -2,7 +2,7 @@ html {
     font-size: 12pt;
 }
 @media (min-width: 640px){
-    html {font-size: 16pt;}
+    html { font-size: 16pt; }
 }
 img {
     max-width: 100%;
@@ -14,5 +14,6 @@ body {
     max-width: 40rem;
 }
 @media (min-width: 640px) {
-    .two-columns-example {display: flex; width: 50%;}
+    .two-columns-example { display: flex; }
+    .two-columns-example > *{ width: 50%; }
 }
