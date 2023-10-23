@@ -153,18 +153,17 @@ block {
     line-height: 1.5em;
     margin: 10px;
 }
-.description, .nutrition.right {
-  background-color: transparent;
+.description {
   padding-bottom: 40px;
   font-size: 1.1em;
 }
 .description {
   text-indent: 2em;
 }
-.description, .equipment, .ingredients, .directions, .nutrition.right, .additional {
+.description, .equipment, .ingredients, .directions, .additional {
   border-bottom: 2px solid rgb(227, 208, 183);
 }
-.ingredients, .directions, .nutrition.right, .additional {
+.ingredients, .directions, .additional {
     margin-top: 20px;
     padding-bottom: 20px;
 }
@@ -211,7 +210,6 @@ top_bar {
     position: fixed;
     top: 15px;
     left: 45px;
-    /* z-index: 2; */
 }
 .nav_bar .dropdown-content {
     width: 30%;
@@ -251,11 +249,35 @@ top_bar {
 .additional li a:link, .additional li a:visited{
     color: rgb(119, 67, 28);
 }
-.nutrition.right {
-    display: none;
-    /* width: 50%;
-    float: right; */
+::-webkit-scrollbar {
+    width: 20px;
 }
+::-webkit-scrollbar-track {
+    background-color:  rgb(248, 246, 237);
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(140, 70, 52, 0.9);
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(140, 70, 52)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -318,6 +340,7 @@ top_bar {
 }
 
 @media (max-width: 760px) {
+    body::-webkit-scrollbar{display: none;}
     div .head_images {height: 280px;}
     .head_images img {
         border: 2px solid rgb(140, 70, 52);
@@ -337,7 +360,6 @@ top_bar {
         position: sticky;
         top: 0;
     }
-    .nutrition.right {display: block;}
     .nutrition.dropdown {
         /* display: none; */
         position: fixed;
