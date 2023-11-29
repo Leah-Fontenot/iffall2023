@@ -1,0 +1,360 @@
+body {
+    margin: 0;
+    font-size: 20px;
+}
+header {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+button {
+    background-color: transparent;
+    border: none;
+}
+div.corner {
+    position: relative;
+    width: 550px;
+    height: 450px;
+    z-index: 1;
+}
+div.corner-legacy {
+    position: relative;
+    width: 550px;
+    height: 550px;
+    z-index: 1;
+}
+.greatC {
+    position: relative;
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    top: 150px;
+    left: 150px;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+span.arc {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 0px;
+    left: 0px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border: 8px solid black;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 1;
+}
+button.time_circle {
+    /* width should go from 80px to 100px on hover and change background-color */
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: white;
+    border: 4px solid black;
+    margin: 0;
+    padding: 0;
+}
+div.staple button.time_circle, button.time_circle:hover {
+    /* width should go from 80px to 100px on hover and change background-color */
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    transform: translate(-5px);
+    color: white;
+}
+div.time {
+    position: absolute;
+    height: 100px;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+div.home_button {
+    top: 66px;
+    left: 398.5px;
+}
+div.life_button {
+    top: 180px;
+    left: 361px;
+}
+div.coup_button {
+    top: 285.6px;
+    left: 285.6px;
+}
+div.reign_button {
+    top: 361px;
+    left: 180px;
+}
+div.legacy_button {
+    top: 398.5px;
+    left: 66px;
+}
+text {
+    display: none;
+    font-size: 18px;
+}
+button.home:hover .home-text, button.life:hover .life-text, button.coup:hover .coup-text, button.reign:hover .reign-text, button.legacy:hover .legacy-text {
+    display: block;
+    color: white;
+}
+h1.title {
+    margin: 0;
+    font-size: 3rem;
+    position: absolute;
+}
+h1.home.title {
+    top: 35px;
+    left: 480px;
+}
+h1.life.title {
+    top: 150px;
+    left: 442px;
+}
+h1.coup.title {
+    top: 260px;
+    left: 366px;
+}
+h1.reign.title {
+    top: 340px;
+    left: 260px;
+}
+h1.legacy.title {
+    top: 460px;
+    left: 50px;
+}
+span.portrait {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    top: 280px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border: 2px dotted rgb(0, 0, 0);
+    border-radius: 50%;
+    /* background-color: rgba(205, 187, 234, 0.5); */
+    z-index: 1;
+}
+section {
+    margin: 0 15%;
+    padding: 2% 0;
+    border-bottom: 4px dotted black;
+}
+
+.sources p {
+    padding-left: 40px;
+}
+
+
+div.columns {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin:0%;
+}
+div.left-column {
+    padding-top: 450px;
+}
+div.left-column.legacy {
+    padding-top: 500px;
+}
+div.ornament {
+    position: relative;
+}
+div.ornament img {
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin: 10px 0;
+    transform: translate(0, -50%);
+}
+
+
+footer {
+    position: relative;
+    height: 180px;
+    margin: 0 15% 2% 15%;
+    font-size: .8rem;
+}
+
+div.footer.ornament img {
+    display: none;
+    transform: rotate(90deg) translate(-50%, -50%);
+    height: 620px;
+    width: auto;
+    
+    position: relative;
+    margin: -300px -33%;
+}
+div.timeline_footer {
+    position: relative;
+    top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+button.footer_nav {
+    width: 100px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 5%;
+    background-color: white;
+    border: 2px solid black;
+    font-size: .8rem;
+    font-weight: bold;
+}
+button.footer_nav.staple, button.footer_nav:hover {
+    background-color: black;
+    color: white;
+}
+div.owner {
+    margin-top: 80px;
+    padding: 0 5%;
+}
+
+
+h2 {
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+/* All @media things */
+
+@media (max-width: 1400px) {
+    div.ornament img {
+        height: auto;
+        width: 140%;
+    }
+    span.portrait {
+        width: 350px;
+        height: 264px;
+    }
+}
+@media (max-width: 1260px) {
+    body { font-size: 18px; }
+    span.portrait {
+        width: 300px;
+        height: 225px;
+        top: 240px;
+        left: 55%;
+        border: 2px dotted rgb(0, 0, 0);
+    }
+}
+@media (max-width: 1200px) {
+    h1.title { font-size: 4.5rem;}
+    span.portrait {
+        width: 275px;
+        height: 206px;
+        top: 340px;
+    }
+    div.ornament img { width: 125%; }
+    /* section { margin: 0 10%; } */
+}
+@media (max-width: 1080px) {
+    h1.title { font-size: 3rem;}
+    header { width: 100%; }
+    span.portrait { top: 240px; left: 60%; }
+    button.footer_nav { width: 80px; }
+}
+@media (max-width: 1000px) {
+    span.portrait {
+        top: 220px;
+        left: 75%;
+    }
+}
+@media (max-width: 970px) {
+    body { font-size: 16px; }
+    span.portrait { top: 240px; left: 70%; }
+    div.ornament img { width: 110%; }
+    button.footer_nav.staple { display: none; }
+}
+@media (max-width: 910px) {
+    body { font-size: 16px; }
+    span.portrait { top: 260px; }
+}
+@media (max-width: 810px) {
+    body { font-size: 16px; }
+    h1.title { font-size: 3rem;}
+    span.portrait { width: 200px; height: 150px; top: 260px; left: 75%;}
+    button.footer_nav { width: 65px; height: 35px; }
+    footer { font-size: 1rem; }
+}
+@media (max-width: 770px) {
+    section { margin: 0 10%; }
+    h1.title { font-size: 2.5rem;}
+    span.portrait { left: 80%;}
+}
+@media (max-width: 700px) {
+    text { display: block; font-size: .8rem; font-weight: bold;}
+    h1.home.title, h1.life.title, h1.coup.title, h1.reign.title, h1.legacy.title { top: 460px; left: 50px; }
+    div.left-column { padding-top: 500px; }
+    div.left-column.home { padding-top: 520px; }
+    span.portrait { top: 280px; }
+}
+
+@media (max-width: 660px) {
+    div.columns { display: block;  }
+    div.ornament img { display: none; }
+    div.footer.ornament img { display: block; }
+    div.footer.ornament { height: 280px; }
+    section { border: none;}
+    section.misconceptions, section.who-is-she { border-bottom: 4px dotted black; }
+    div.owner {
+        margin-top: 200px;
+        padding: 5%;
+    }
+    div.timeline_footer { top: 200px;}
+}
+@media (max-width: 650px) {
+    div.footer.ornament img {
+        height: 610px;
+    }
+}
+@media (max-width: 640px) {
+    div.footer.ornament img {
+        height: 560px;
+        margin: -300px -27%;
+    }
+    div.timeline_footer { top: 185px; }
+}
+@media (max-width: 630px) {
+    div.footer.ornament img {
+        margin: -300px -30%;
+    }
+}
+@media (max-width: 610px) {
+    div.footer.ornament img {
+        margin: -300px -31%;
+    }
+}
+@media (max-width: 600px) {
+    div.footer.ornament img {
+        height: 360px;
+        margin: -230px 0%;
+    }
+    div.timeline_footer { top: 80px; }
+    div.owner { margin-top: 90px; }
+    span.portrait { display: none; }
+}
+@media (max-width: 500px) {
+    div.footer.ornament img { margin: -230px -15%; }
+}
+@media (max-width: 440px) {
+    div.footer.ornament img { height: 300px; margin: -200px -10%; }
+    div.timeline_footer { top: 50px; }
+    div.owner { margin-top: 60px; }
+    div.left-column { padding-top: 570px; }
+    div.left-column.home { padding-top: 570px; }
+}
+@media (max-width: 380px) {
+    div.footer.ornament img { margin: -200px -20%; }
+}
