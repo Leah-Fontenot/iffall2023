@@ -694,7 +694,7 @@ h2 {
 @media (max-width: 480px) {
     .title { font-size: 2em; }
     .home.title, .life.title, .rise.title, .reign.title, .legacy.title { top: 400px; }
-    .legacy.title { height: 40px;}
+    .legacy.title, .rise.title { height: 40px;}
     div.sources a img { height: 35px; padding-left: 20px; }
     /* ------------timeline------------- */
     header, header.home, header.rise, div.corner { height: 400px; }
