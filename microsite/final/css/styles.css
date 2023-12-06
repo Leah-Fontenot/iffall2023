@@ -1,0 +1,756 @@
+html, button {
+    font-family: 'Times New Roman', Times, serif;
+}
+html {
+    background-color: white;
+}
+body {
+    margin: 0;
+    font-size: 20px;
+}
+body p {
+    line-height: 2em;
+}
+header {
+    position: absolute;
+    top: 0;
+    width: 90%;
+}
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+}
+div.corner {
+    position: relative;
+    width: 550px;
+    height: 450px;
+    z-index: 1;
+}
+div.corner-legacy {
+    position: relative;
+    width: 550px;
+    height: 550px;
+    z-index: 1;
+}
+/* -----------------------------------------------------------"C" LOGO IN TOP-RIGHT CORNER------------------------------------------------------------------ */
+.greatC {
+    position: relative;
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    top: 150px;
+    left: 150px;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+/* -----------------------------------------------------------TIMELINE-LIKE NAVIGATION------------------------------------------------------------------ */
+
+/* -----------TIMELINE ARC LINE------------ */
+
+span.arc {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    box-sizing: border-box;
+    border: 8px solid black;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 1;
+}
+
+/* -----------CIRCLE CALLOUTS ON TIMELINE------------ */
+
+button.time_circle {
+    width: 70px;
+    height: 70px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid black;
+    margin: 0;
+    padding: 0;
+}
+div.staple button.time_circle, button.time_circle:hover {
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    color: black;
+}
+button.time_circle:hover {
+    transform: translate(0, -3px);
+}
+
+/* ---------------------------------------BACK TO TOP BUTTON-------------------------------------- */
+
+div.back-to-top {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    bottom: 5%;
+    right: 10%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+div.back-to-top a i {
+    scale: 150%;
+    z-index: 4;
+}
+div.back-to-top:hover a {
+    transform: scale(125%);
+}
+/* ---------------hOME BACK-TO-TOP--------------------- */
+div.back-to-top.home {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+div.back-to-top.home a {
+    color: rgba(0, 0, 0, 0.5);
+}
+div.back-to-top.home:hover a {
+    color: rgb(0, 0, 0);
+    transform: scale(125%);
+}
+/* ---------------lIFE BACK-TO-TOP--------------------- */
+div.back-to-top.life {
+    background-color: rgba(255, 244, 0, 0.1);
+}
+div.back-to-top.life a {
+    color: rgba(255, 244, 0, 0.5);
+}
+div.back-to-top.life:hover a {
+    color: rgba(255, 244, 0);
+    transform: scale(125%);
+}
+/* ---------------RISE BACK-TO-TOP--------------------- */
+div.back-to-top.rise {
+    background-color: rgba(250, 160, 160, 0.1);
+}
+div.back-to-top.rise a {
+    color: rgba(250, 160, 160, 0.5);
+}
+div.back-to-top.rise:hover a {
+    color: rgba(250, 160, 160);
+    transform: scale(125%);
+}
+/* ---------------REIGN BACK-TO-TOP--------------------- */
+div.back-to-top.reign {
+    background-color: rgba(137, 207, 240, 0.1);
+}
+div.back-to-top.reign a {
+    color: rgba(137, 207, 240, 0.5);
+}
+div.back-to-top.reign:hover a {
+    color: rgba(137, 207, 240);
+    transform: scale(125%);
+}
+/* ---------------LEGACY BACK-TO-TOP--------------------- */
+div.back-to-top.legacy {
+    background-color: rgba(175, 225, 175, 0.1);
+}
+div.back-to-top.legacy a {
+    color: rgba(175, 225, 175, 0.5);
+}
+div.back-to-top.legacy:hover a {
+    color: rgba(175, 225, 175);
+    transform: scale(125%);
+}
+
+/* -----------------------------------------CIRCLE BUTTON: PAGE SPECIFIC COLORS  &  BACK TO TOP BUTTON----------------------------------------- */
+
+div.home_button.staple button.time_circle, div.home.timeline_nav button.time_circle:hover {
+    background-image: radial-gradient(white 5%, rgb(229, 228, 226), rgb(200 205 212), rgb(193 205 215));
+    background-color: rgb(219, 222, 224);
+    filter: contrast(100%) brightness(1.1);
+    border: none;
+}
+div.life_button.staple button.time_circle, div.life.timeline_nav button.time_circle:hover {
+    background-image: radial-gradient(white, rgb(230, 230, 240), rgb(206, 210, 223), rgb(230, 230, 240));
+    background-image: radial-gradient(white, rgb(229, 228, 226), rgb(200 205 212), rgb(193 205 215));
+    background-color: rgb(219, 222, 224);
+    filter: contrast(100%) brightness(1.1);
+    border: none;
+}
+div.rise_button.staple button.time_circle, div.rise.timeline_nav button.time_circle:hover {
+    background-image: conic-gradient(from -15deg, rgb(255, 138, 138) 65deg, 
+                                    rgb(255, 100, 100) 95deg, 
+                                    rgb(209, 1, 1) 150deg, 
+                                    rgb(233, 29, 29) 260deg, 
+                                    rgb(209, 1, 1) 315deg, 
+                                    rgb(255, 100, 100) 345deg, 
+                                    rgb(255, 138, 138) 375deg);
+    background-color: rgb(209, 1, 1);
+    filter: contrast(100%) brightness(1.1);
+    border: none;
+}
+div.reign_button.staple button.time_circle, div.reign.timeline_nav button.time_circle:hover {
+    background-image: conic-gradient(from 5deg, #9adafe 65deg, 
+                                    #6eb2fe 100deg, 
+                                    #1252ba 155deg, 
+                                    #1e86fe 200deg, 
+                                    #1252ba 265deg, 
+                                    #6eb2fe 330deg, 
+                                    #9adafe 360deg);
+    background-color: rgb(14, 82, 186);
+    filter: contrast(100%) brightness(1.1);
+    border: none;
+}
+div.legacy_button.staple button.time_circle, div.legacy.timeline_nav button.time_circle:hover {
+    /* background-image: radial-gradient(rgb(255, 252, 232) 12%, rgb(255, 246, 195) 10%, rgb(255, 215, 0) 65%, rgb(222, 188, 0) 12%); */
+    /* background-image: radial-gradient(rgb(254, 254, 108) 5%, rgb(255, 210, 38) 71%, rgb(206, 166, 26) 2%); */
+    /* background-image: radial-gradient(rgb(254, 254, 108) 5%, rgb(231, 225, 31) 71%, rgb(206, 166, 26) 2%); */
+    background-image: radial-gradient(rgb(254, 254, 108) 5%, rgb(235, 196, 33) 85%, rgb(206, 166, 26) 6%);
+    background-color: rgb(255, 215, 0);
+    filter: contrast(100%) brightness(1.05);
+    border: none;
+}
+
+/* -----------CIRCLE BUTTON LOCATIONS------------ */
+
+div.time {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+div.home_button {
+    top: 66px;
+    left: 390.5px;
+}
+div.life_button {
+    top: 180px;
+    left: 353px;
+}
+div.rise_button {
+    top: 281.6px;
+    left: 281.6px;
+}
+div.reign_button {
+    top: 353px;
+    left: 180px;
+}
+div.legacy_button {
+    top: 390.5px;
+    left: 66px;
+}
+text {
+    display: none;
+    font-weight: bold;
+    font-size: .8em;
+}
+text.timeline {
+    text-transform: uppercase;
+}
+button.home:hover .home-text, button.life:hover .life-text, button.coup:hover .coup-text, button.reign:hover .reign-text, button.legacy:hover .legacy-text {
+    display: block;
+    color: black;
+}
+
+/* ----------------------------------------------------PAGE TITLES AND THEIR LOCATIONS------------------------------------------------------ */
+
+.title{
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 80px;
+}
+/* h1.title { z-index: 1; } */
+div.title img {
+    height: 100%;
+    padding-right: 10px;
+    z-index: 2;
+}
+.home.title {
+    top: 32px;
+    left: 480px;
+}
+.life.title {
+    top: 144px;
+    left: 442px;
+}
+.rise.title {
+    top: 248px;
+    left: 366px;
+}
+.reign.title {
+    top: 320px;
+    left: 260px;
+}
+.legacy.title {
+    top: 450px;
+    left: 50px;
+}
+
+/* ---------------------------------------------- PORTRAITS/PAINTINGS OF CATHERINE--------------------------------------------------------- */
+
+
+span.portrait img{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    z-index: 1;
+    object-fit: cover;
+}
+img.empress.home {
+    top: 285px;
+    left: 50%;
+    height: 325px;
+    width: 400px;
+    object-position: 90% center;
+}
+img.empress.life {
+    top: 240px;
+    left: 70%;
+    height: 400px;
+    width: 275px;
+}
+img.empress.rise {
+    top: 240px;
+    left: 72%;
+    height: 400px;
+    width: 500px;
+}
+img.empress.reign {
+    top: 240px;
+    left: 60%;
+    height: 400px;
+    width: 575px;
+}
+img.empress.legacy {
+    top: 260px;
+    left: 60%;
+    height: 450px;
+    width: 450px;
+}
+
+/* --------------------------------------------SECTIONS---------------------------------------------------- */
+
+section {
+    margin-left: 15%;
+    padding: 3% 0;
+}
+section.second {
+    border-top: 4px dotted black;
+    padding-top: 6%;
+}
+
+/* ------------------------------------------------ WORDS LEFT, FILLIGREE RIGHT------------------------------------------------------ */
+
+div.columns {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin:0%;
+    overflow: hidden;
+}
+div.left-column {
+    padding-top: 450px;
+}
+div.left-column.legacy {
+    padding-top: 525px;
+}
+div.ornament.home {
+    background-image: url("../../images/Final_filigree/filligree_home.png");
+}
+div.ornament.life {
+    background-image: url("../../images/Final_filigree/filligree_life.png");
+}
+div.ornament.rise {
+    background-image: url("../../images/Final_filigree/filligree_rise.png");
+}
+div.ornament.reign {
+    background-image: url("../../images/Final_filigree/filligree_reign.png");
+}
+div.ornament.legacy {
+    background-image: url("../../images/Final_filigree/filligree_legacy.png");
+}
+div.ornament {
+    position: relative;
+    transform: translate(50%, 0%);
+    background-size: contain;
+}
+
+/* ------------------------------------------------------------- FOOTER ------------------------------------------------------------ */
+
+.footer {
+    font-size: .8em;
+}
+section.footer {
+    margin: 0;
+    padding: 4% 22% 4% 12%;
+    border-top: 6px dotted black;
+}
+img.footer.ornament {
+    display: none;
+    transform: translate(-50%, -25%);
+    width: 125%;
+    position: relative;
+    left: 50%;
+}
+div.timeline_footer {
+    position: relative;
+    top: 0px;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around; */
+}
+span button.footer_nav {
+    width: 19%;
+    /* width: 100px; */
+    height: 30px;
+    box-sizing: border-box;
+    border-right: 2px solid black;
+    font-size: .9em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+span button.footer_nav.legacy {
+    border-right: 0px solid black;
+}
+button.footer_nav.staple, button.footer_nav:hover {
+    text-decoration: underline;
+    font-size: 1.1em;
+}
+div.owner {
+    margin-top: 4%;
+    padding: 0;
+}
+div.owner p {
+    line-height: 1.2em;
+}
+div.sources {
+    display: flex;
+    align-items: center;
+}
+div.sources p {
+    text-transform: lowercase;
+}
+div.sources a img {
+    height: 55px;
+    padding-left: 60px;
+}
+div.sources a button {
+    position: relative;
+}
+div.sources a.wiki:hover text.wiki, div.sources a.brit1:hover text.brit1, div.sources a.brit2:hover text.brit2 {
+    display: block;
+    font-weight: lighter;
+    background-color: rgb(214, 211, 211, 0.7);
+    color: rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+    font-size: .9em;
+    position: absolute;
+    left: 80%;
+    top: -5px;
+    z-index: 2;
+}
+div.sources a.wiki:hover text.wiki {
+    width: 160px;
+}
+div.sources a.brit1:hover text.brit1 {
+    width: 220px;
+}
+div.sources a.brit2:hover text.brit2 {
+    width: 250px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+
+/*---------------------------------------------------- All @media things -------------------------------------------------------------------------*/
+/* --------------------------------------------  1460  ---------------------------- */
+@media (max-width: 1460px) {
+    img.empress.home { left: 60%; }
+    img.empress.life { left: 74%; }
+    img.empress.rise {
+        height: 360px;
+        width: 450px;
+    }
+    header.rise { width: 58%; }
+    img.empress.reign { width: 550px; }
+    img.empress.legacy { left: 63%; }
+}
+/* --------------------------------------------  1280  ---------------------------- */
+@media (max-width: 1280px) {
+    body { font-size: 18px; }
+    .footer { font-size: .9em; }
+    .title { height: 70px; }
+    img.empress.life {
+        height: 375px;
+        width: 300px;
+    }
+    header { width: 62%;}
+    header.home { width: 90%;}
+    img.empress.reign {
+        left: 62%;
+        height: 325px;
+        width: 500px;
+    }
+    img.empress.legacy {
+        top: 250px;
+        height: 400px;
+        width: 400px;
+    }
+}
+/* --------------------------------------------  1200  ---------------------------- */
+@media (max-width: 1200px) {
+    img.empress.home {
+        top: 300px;
+        left: 68%;
+        height: 300px;
+        width: 300px;
+        object-position: 70%;
+    }
+    img.empress.life {
+        left: 70%;
+        height: 350px;
+        width: 285px;
+    }
+    img.empress.rise {
+        top: 230px;
+        left: 70%;
+        height: 320px;
+        width: 370px;
+    }
+    img.empress.reign {
+        top: 215px;
+        left: 65%;
+        height: 275px;
+        width: 400px;
+    }
+    img.empress.legacy {
+        top: 245px;
+        height: 350px;
+        width: 350px;
+    }
+}
+/* --------------------------------------------  1100  ---------------------------- */
+@media (max-width: 1100px) {
+    body { font-size: 16px;}
+    img.empress.home {
+        top: 320px;
+        left: 65%;
+        height: 275px;
+        width: 275px
+    }
+    img.empress.life {
+        left: 74%;
+        height: 300px;
+        width: 250px;
+    }
+    img.empress.rise {
+        top: 210px;
+        height: 300px;
+        width: 300px;
+    }
+    header.rise { width: 62%; }
+    img.empress.reign { width: 350px; }
+    img.empress.legacy {
+        top: 235px;
+        left: 65%;
+        height: 300px;
+        width: 300px;
+    }
+}
+/* --------------------------------------------  1000  ---------------------------- */
+@media (max-width: 1000px) {
+    body { font-size: 15px;}
+    .title {
+        height: 60px;
+        font-size: 2.5em;
+    }
+    header { width: 100%; }
+    header.home { width: 100%; }
+    header.rise { width: 100%; }
+    .home.title, .life.title, .rise.title, .reign.title, .legacy.title { top: 460px; left: 50px; }
+    div.left-column { padding-top: 525px; }
+    .footer { font-size: .9em; }
+    div.sources a img {
+        height: 45px;
+        padding-left: 55px;
+    }
+    img.empress.life {
+        left: 70%;
+        height: 350px;
+        width: 285px;
+    }
+}
+/* ---------------------------------------------  900  ---------------------------- */
+@media (max-width: 900px) {
+    img.empress.home {
+        top: 300px;
+        left: 68%;
+        height: 250px;
+        width: 250px;
+    }
+    img.empress.rise {
+        top: 300px;
+        left: 70%;
+        height: 250px;
+        width: 275px;
+    }
+    img.empress.reign {
+        top: 350px;
+        left: 67%;
+        height: 250px;
+        width: 300px;
+    }
+    img.empress.legacy {
+        top: 300px;
+        left: 67%;
+        height: 250px;
+        width: 250px;
+    }
+}
+/* ---------------------------------------------  800  ---------------------------- */
+@media (max-width: 800px) {
+    body { font-size: 14px;}
+    .title { height: 50px; }
+    span button.footer_nav { height: 25px; }
+    section { margin-left: 10%; }
+    section.footer { padding-left: 8%; }
+    span button.footer_nav { font-size: .8em; height: 20px; }
+    button.footer_nav.staple, button.footer_nav:hover { font-size: 1em; }
+    div.back-to-top { width: 35px; height: 35px; }
+    div.back-to-top a i { scale: 90% }
+    img.empress.life {
+        top: 350px;
+        height: 300px;
+        width: 250px;
+    }
+}
+/* ---------------------------------------------  700  ---------------------------- */
+@media (max-width: 700px) {
+    text.timeline { display: block; font-size: .8em; }
+    div.columns { display: inline;  }
+    div.right-column { display: none; }
+    img.footer.ornament  { display: block; }
+    section.footer { border: none; padding: 4% 10%;}
+    div.sources a img { padding-left: 40px; }
+    div.owner { margin-top: 7%; }
+    section { margin-right: 10%; }
+    div.corner { width: 100%; }
+    .home.title, .life.title, .rise.title, .reign.title, .legacy.title { top: 450px; left: 10%; }
+    div.left-column, div.left-column.home { padding-top: 650px; }
+    div.left-column.home { padding-top: 680px; }
+    img.empress.home {
+        top: 600px;
+        left: 50%;
+        height: 175px;
+        width: 175px;
+    }
+    div.left-column.life { padding-top: 570px; }
+    .life.title { top: 470px; }
+    img.empress.life {
+        top: 470px;
+        left: 75%;
+        height: 225px;
+        width: 180px;
+    }
+    img.empress.rise {
+        top: 590px;
+        left: 50%;
+        height: 175px;
+        width: 250px;
+    }
+    div.left-column.reign { padding-top: 550px; }
+    img.empress.reign {
+        top: 475px;
+        left: 65%;
+        height: 200px;
+        width: 250px;
+    }
+    div.left-column.legacy { padding-top: 650px; }
+    img.empress.legacy {
+        top: 590px;
+        left: 50%;
+        height: 175px;
+        width: 175px;
+    }
+    div.back-to-top.life a {
+        color: rgb(143, 137, 23);
+    }
+}
+
+/* ---------------------------------------------  480  ---------------------------- */
+@media (max-width: 480px) {
+    .title { font-size: 2em; }
+    .home.title, .life.title, .rise.title, .reign.title, .legacy.title { top: 400px; }
+    .legacy.title { height: 40px;}
+    div.sources a img { height: 35px; padding-left: 20px; }
+    /* ------------timeline------------- */
+    header, header.home, header.rise, div.corner { height: 400px; }
+    .greatC {
+        width: 200px;
+        top: 100px;
+        left: 100px;
+    }
+    span.arc {
+        width: 700px;
+        height: 700px;
+    }
+    button.time_circle:hover {
+        transform: translate(0, 0px);
+    }
+    div.home_button {
+        top: 60px;
+        left: 340px;
+    }
+    div.life_button {
+        top: 160px;
+        left: 305px;
+    }
+    div.rise_button {
+        top: 245px;
+        left: 245px;
+    }
+    div.reign_button {
+        top: 305px;
+        left: 160px;
+    }
+    div.legacy_button {
+        top: 340px;
+        left: 60px;
+    }
+    /* ------------portraits------------- */
+    img.empress.home { top: 590px; }
+    div.left-column.life { padding-top: 620px; }
+    img.empress.life {
+        top: 550px;
+        left: 50%;
+        height: 190px;
+        width: 150px;
+    }
+    div.left-column.rise { padding-top: 620px; }
+    img.empress.rise { top: 540px; }
+    div.left-column.reign { padding-top: 600px; }
+    img.empress.reign {
+        top: 540px;
+        left: 50%;
+        height: 160px;
+        width: 200px;
+    }
+    div.left-column.legacy { padding-top: 635px; }
+    img.empress.legacy {
+        top: 565px;
+        height: 150px;
+        width: 150px;
+    }
+}
