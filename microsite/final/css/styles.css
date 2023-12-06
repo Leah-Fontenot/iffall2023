@@ -71,6 +71,7 @@ button.time_circle {
     border-radius: 50%;
     background-color: white;
     border: 3px solid black;
+    color: black;
     margin: 0;
     padding: 0;
 }
@@ -215,8 +216,8 @@ div.legacy_button.staple button.time_circle, div.legacy.timeline_nav button.time
 
 div.time {
     position: absolute;
-    height: 100px;
-    width: 100px;
+    /* height: 100px;
+    width: 100px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -646,7 +647,7 @@ h2 {
     div.sources a img { padding-left: 40px; }
     div.owner { margin-top: 7%; }
     section { margin-right: 10%; }
-    div.corner { width: 100%; }
+    div.corner, div.corner-legacy { width: 100%; }
     .home.title, .life.title, .rise.title, .reign.title, .legacy.title { top: 450px; left: 10%; }
     div.left-column, div.left-column.home { padding-top: 650px; }
     div.left-column.home { padding-top: 680px; }
